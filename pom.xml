@@ -10,8 +10,7 @@
     <name>dagger-java-module</name>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -104,7 +103,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>io.dagger.module.Entrypoint</mainClass>
+                                    <mainClass>io.dagger.gen.entrypoint.Entrypoint</mainClass>
                                 </transformer>
                             </transformers>
                             <outputDirectory>${project.build.outputDirectory}</outputDirectory>

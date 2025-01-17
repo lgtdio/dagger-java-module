@@ -1,4 +1,4 @@
-/// Dagger Java Module example
+/** Dagger Java Module example */
 @Module(value = "DaggerJavaModule")
 package io.lgtd.dagger.java.module;
 
